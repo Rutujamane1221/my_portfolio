@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b31318efff.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <div id="header">
+        
+      
+        
+      <!------------ <img class="resize" src="images/3.jpg">------------->
+        
+        <div class="container">
+            <nav>
+                <img src="images/name1logo.jpeg"class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,Im <span>Rutuja</span><br>Mane From Satara</h1>
+            </div>
+        </div>
+    </div>
+<!--------------------------------------------about------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myimg.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a creative designer and developer,
+                        but still exploring other technologies 
+                        and frameworks that catch my interest!
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>2020</span><br>create a quiz app using java and kotlin language</li>
+                        <li><span>2021</span><br>create a hospital management system using python and mysql database</li>
+                        <li><span>2023</span><br>work on 2 projects in intenship of 2 moths with yhills</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>completed 10 th with 90.40% in Sanjay Bhairavnath Kale vidyalay Tasgaon</li>
+                        <li><span>2020</span><br>completed 12 th with 67.38% in Yashvantrao Chavan Institute Of Science Satara</li>
+                        <li><span>2022-23</span><br>9.09 CGPA Upto 3rd year of BE Comp in Svitribai Phule Pune University</li>
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="Services-list">
+                <div>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>provoid all services related to web development using Html
+                    Css Javascript and for backend python javascript and Mysql Database.
+                        
+                        </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        
+                        </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>
+                        
+                        </p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------portfolio---------------------------------------->
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/work-1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <p class="card-text">used to find mcq question and answer related to technology,GK,Accounting ect.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/work-2.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Music Player App</h4>
+                            <p class="card-text">used to serching,playing and resuming songs we can enjoy any type of music using this app</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/work-3.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Online Shopping App</h4>
+                            <p class="card-text">used for buying Products online with discount and free delivay also</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <!-------------------------------contact me---------------------------------------------------------->
+
+    <!-- contact section-->
+    <section id="contact">
+         
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manerutuja905@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9130292598</p>
+                    <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/rutuja-mane-a16122224/"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.linkedin.com/in/rutuja-mane-a16122224/"><i class="fa-brands fa-instagram"></i></a>
+                       <a href="https://www.github.com/in/Rutujamane1221/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/RutujaMane_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                
+
+        
+                </div>
+            </div>
+        </div>
+
+
+       
+            
+    </section>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwZblMxy4wsQHov_4UfIkd9xyaVg05pITHZHRTqzLaoyjHNZE1XOxxAGNyvYnsspa35cA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+    
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message Sent Successfully"
+                  setTimeout(function(){
+                    msg.innerHTML=""},5000)
+                    form.resrt()
+                  })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+        
+ </body>
+ </html>
+    
